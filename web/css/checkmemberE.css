@@ -1,0 +1,116 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 23, 2025, 5:38:42 PM
+    Author     : P15Gen1
+*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css');
+
+/* Tổng thể */
+body.uniqueBody {  /* Đặt tên đặc biệt cho body */
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container đặc biệt */
+#uniqueContainer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Bảng dữ liệu */
+#uniqueContainer .imageTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Tiêu đề bảng */
+#uniqueContainer .imageTable thead {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+/* Ô tiêu đề */
+#uniqueContainer .table-header {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Hàng dữ liệu */
+#uniqueContainer .user-row {
+    transition: background 0.3s ease-in-out;
+}
+
+#uniqueContainer .user-row:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+#uniqueContainer .user-row:hover {
+    background: #e6e6e6;
+}
+
+/* Cột thông tin */
+#uniqueContainer .user-name, 
+#uniqueContainer .club-name, 
+#uniqueContainer .status-actions {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Form xử lý trạng thái */
+#uniqueContainer .status-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Nút hành động */
+#uniqueContainer .action-btn {
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+/* Nút chấp nhận */
+#uniqueContainer .accept-btn {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+}
+
+#uniqueContainer .accept-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.5);
+}
+
+/* Nút từ chối */
+#uniqueContainer .reject-btn {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+}
+
+#uniqueContainer .reject-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 4px 10px rgba(220, 53, 69, 0.5);
+}

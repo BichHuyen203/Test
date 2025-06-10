@@ -1,0 +1,72 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 17, 2025, 10:01:52 PM
+    Author     : P15Gen1
+*/
+/* style.css */
+
+/* Màu nền của toàn bộ trang */
+body {
+    background-color: #f5f6fa; /* Màu trắng sáng */
+    color: #333333; /* Màu chữ xám */
+    
+}
+
+/* Định dạng cho các bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Định dạng các ô trong bảng */
+td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Viền xám nhạt */
+    font-family: cursive;
+}
+
+/* Tiêu đề các cột */
+td:first-child {
+    font-weight: bold;
+}
+
+/* Định dạng cho nút xóa */
+input[type="submit"] {
+    background-color: #ffcc99; /* Màu cam nhạt */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hiệu ứng khi hover vào nút */
+input[type="submit"]:hover {
+    background-color: #ff9933; /* Màu cam đậm khi hover */
+}
+
+/* Định dạng form hiển thị danh sách */
+form {
+    margin-top: 20px;
+}
+
+/* Định dạng cho bảng khi không có dữ liệu */
+table.empty {
+    text-align: center;
+    color: #888; /* Màu xám nhạt cho thông báo không có dữ liệu */
+}
+
+/* Các thông báo lỗi hoặc thành công */
+.alert {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ffcc00;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+

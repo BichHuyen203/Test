@@ -1,0 +1,79 @@
+/* Định dạng chung */
+body {
+    font-family: cursive;
+    background: #f8f8f8;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Form chứa nút */
+#eventRequestForm {
+    margin-bottom: 20px;
+}
+
+/* Nút bấm màu đen */
+#viewEventButton {
+    background: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#viewEventButton:hover {
+    background: #333;
+    transform: scale(1.07);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Container chứa bảng */
+#eventTableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Bảng sự kiện */
+#eventTable {
+    width: 80%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Tiêu đề bảng */
+#eventTable thead {
+    background: #4CAF50;
+    color: white;
+}
+
+#eventTable th {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Dòng sự kiện */
+.eventRow td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Xen kẽ màu nền */
+.eventRow:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Hiệu ứng hover */
+.eventRow:hover {
+    background: #e0f2e9;
+    transition: all 0.3s ease-in-out;
+}

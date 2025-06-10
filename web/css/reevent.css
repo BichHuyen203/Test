@@ -1,0 +1,81 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 18, 2025, 3:55:33 PM
+    Author     : P15Gen1
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e3d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;  /*Tăng khoảng cách giữa các ô*/
+    max-width: 1200px;
+}
+
+.event-box {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: 15px;  /*Tạo khoảng cách giữa các ô*/ 
+}
+
+.event-box:hover {
+    transform: translateY(-5px);
+}
+
+.event-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.event-date {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-location {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.register-button {
+    background: #d4a373;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.register-button:hover {
+    background: #b5835a;
+}

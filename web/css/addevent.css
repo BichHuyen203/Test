@@ -1,0 +1,53 @@
+/* Hộp form chính */
+.event-box {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+h3 {
+    color: #343a40;
+    font-weight: bold;
+}
+
+/* Input và Select */
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Nút submit */
+.btn-primary {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Căn chỉnh icon với label */
+.form-label i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+/* Định dạng placeholder */
+::placeholder {
+    color: #6c757d;
+    opacity: 0.8;
+}
+
+/* Hiệu ứng focus */
+.form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}

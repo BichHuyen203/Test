@@ -1,0 +1,214 @@
+/* Nút mở chat */
+.chat-icon {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.chat-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.chat-icon:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+/* Modal chat */
+.chat-modal {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 300px; /* Giảm kích thước */
+    height: 400px; /* Chiều cao vừa phải */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+     z-index: 1000; /* Đảm bảo hiển thị trên cùng */
+}
+
+.chat-modal.open {
+    display: flex;
+}
+
+/* Khi modal mở */
+.modal.open {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Nội dung modal */
+.modal-content {
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Nút đóng modal */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.close:hover {
+    transform: rotate(90deg);
+}
+
+/* Tiêu đề */
+.modal-content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.message {
+    background-color: #f1f1f1;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Đảm bảo nội dung căn trái */
+}
+
+#messages {
+    max-height: 300px; /* Giới hạn chiều cao */
+    overflow-y: auto; /* Hiển thị thanh cuộn nếu quá dài */
+}
+
+
+.user-info {
+    font-weight: bold;
+    font-size: 12px;
+    color: #007bff;
+    text-align: left; /* Căn trái */
+    margin-bottom: 3px;
+}
+
+/* Nút delete */
+.delete-btn {
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.delete-btn:hover {
+    color: darkred;
+    transform: scale(1.1);
+}
+
+.delete-btn::before {
+    content: "🗑";
+    margin-right: 5px;
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+#message-input {
+    flex: 1;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 12px;
+    resize: vertical;
+    max-width: 80%;
+    box-sizing: border-box; 
+}
+
+#send-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; 
+}
+
+#send-button::before {
+    content: "📩";
+    margin-right: 5px;
+}
+
+#send-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#message-input {
+    width: 100%;
+    resize: none; 
+    word-wrap: break-word;
+}
+.message div {
+    text-align: left;
+}
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.chat-icon i {
+    font-size: 28px;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.chat-icon:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #0056b3, #004080);
+}
+
+.chat-icon:hover i {
+    transform: rotate(10deg);
+}

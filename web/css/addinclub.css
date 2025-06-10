@@ -1,0 +1,99 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css');
+
+/* Tổng thể */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Bảng dữ liệu */
+#userPendingTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Tiêu đề bảng */
+#userPendingTable thead {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+/* Ô tiêu đề */
+.table-header {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Hàng dữ liệu */
+.user-row {
+    transition: background 0.3s ease-in-out;
+}
+
+.user-row:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.user-row:hover {
+    background: #e6e6e6;
+}
+
+/* Cột thông tin */
+.user-name, .club-name, .status-actions {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Form xử lý trạng thái */
+.status-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Nút hành động */
+.action-btn {
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+/* Nút chấp nhận */
+.accept-btn {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+}
+
+.accept-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.5);
+}
+
+/* Nút từ chối */
+.reject-btn {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+}
+
+.reject-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 4px 10px rgba(220, 53, 69, 0.5);
+}

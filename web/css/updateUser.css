@@ -1,0 +1,76 @@
+.update-user-container {
+    font-family: Arial, sans-serif;
+    background-color: #f5e6d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.update-user-container form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 450px;
+}
+
+/* Tiêu đề */
+.update-user-container h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Sử dụng CSS Grid để căn chỉnh giống bảng */
+.form-group {
+    display: grid;
+    grid-template-columns: 120px 1fr;  /* Cột 1 (label) rộng 120px, cột 2 (input) chiếm phần còn lại */
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Nhãn */
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Ô nhập */
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Nút Update */
+.update-user-container input[type="submit"] {
+    background-color: #d4a373;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.update-user-container input[type="submit"]:hover {
+    background-color: #c2875a;
+}
+
+.status-message {
+    color: gray;
+    font-size: 14px;
+    margin-top: 10px;
+}

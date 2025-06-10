@@ -1,0 +1,81 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 20, 2025, 6:51:48 PM
+    Author     : P15Gen1
+*/
+/* Định dạng bảng */
+#tablereport {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+#tablereport table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#tablereport th, #tablereport td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+#tablereport tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tablereport tr:hover {
+    background-color: #e0f7fa;
+}
+
+#tablereport td:first-child {
+    font-weight: bold;
+}
+
+/* Nút Delete */
+#deletetablereport form {
+    display: flex;
+    justify-content: center;
+}
+
+#deletetablereport input[type="submit"] {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+#deletetablereport input[type="submit"]:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+}
+
+#deletetablereport input[type="submit"]::before {
+    content: '\1F5D1'; /* Unicode icon for trash */
+    margin-right: 5px;
+}
+
+/* Định dạng chung để tránh tràn nội dung */
+#tablereport {
+    overflow-x: auto;
+    padding: 10px;
+}
+
+#tablereport table {
+    min-width: 800px;
+}

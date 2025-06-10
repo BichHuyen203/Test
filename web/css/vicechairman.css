@@ -1,0 +1,170 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 20, 2025, 8:32:02 PM
+    Author     : P15Gen1
+*/
+
+/* Hộp thông báo chung */
+body {
+    background-color: #f5f6fa; /* Màu trắng sáng */
+    color: #333333; /* Màu chữ xám */
+    font-family: Arial, sans-serif;
+}
+/* style cho CheckMemberEvent.jsp */  
+.checkevent body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 20px;
+}
+
+.checkevent {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.checkevent table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.checkevent table, th, td {
+    border: 1px solid #ddd;
+}
+
+.checkevent th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.checkevent th {
+    background-color: #007bff;
+    color: white;
+}
+
+.checkevent tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.checkevent tr:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.button-group input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 80px;
+}
+
+.button-group input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+form {
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    .checkevent {
+        padding: 10px;
+    }
+
+    .checkevent table {
+        font-size: 14px;
+        transform: scale(0.9);
+    }
+
+    .button-group {
+        flex-wrap: wrap;
+    }
+
+    .button-group input[type="submit"] {
+        flex: none;
+        width: auto;
+    }
+}
+
+
+/* Style cho button */
+input[type="submit"] {
+      background: #f58f00;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+  
+}
+input[type="submit"]:hover{
+    background: orangered;
+}
+
+/* style cho AddClub */
+.addclub input[type="text"]{
+    min-width: 30px;
+}
+
+
+.addclub body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.addclub {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.addclub h2 {
+    text-align: center;
+    color: #333;
+}
+
+.addclub table {
+    width: 100%;
+}
+
+.addclub td {
+    padding: 10px;
+}
+
+.addclub input[type="text"], input[type="date"] {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

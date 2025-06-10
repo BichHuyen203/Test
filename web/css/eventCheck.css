@@ -1,0 +1,146 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 22, 2025, 5:42:26 PM
+    Author     : P15Gen1
+*/
+
+/* Style cho container chính của form */
+.survey-container {
+    max-width: 400px; /* Chiều rộng tối đa của form */
+    background-color: white; /* Nền trắng */
+    padding: 30px; /* Tăng padding để tạo không gian */
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    position: fixed; /* Sử dụng position: fixed để căn giữa màn hình */
+    top: 50%; /* Đặt ở giữa theo chiều dọc */
+    left: 50%; /* Đặt ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Căn giữa chính xác */
+    z-index: 1000; /* Đảm bảo form hiển thị trên các phần tử khác */
+    overflow: hidden; /* Ẩn phần viền thừa */
+}
+
+/* Tạo viền màu vàng ở góc */
+.survey-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-top: 4px solid #ffd700; /* Viền vàng trên bên trái */
+    border-left: 4px solid #ffd700;
+}
+
+.survey-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-bottom: 4px solid #ffd700; /* Viền vàng dưới bên phải */
+    border-right: 4px solid #ffd700;
+}
+
+/* Style cho tiêu đề */
+.survey-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style cho phụ đề */
+.survey-container .subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style cho nhóm form */
+.form-group {
+    margin-bottom: 20px; /* Tăng khoảng cách giữa các nhóm */
+}
+
+/* Style cho nhãn */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Style cho textarea, input và select */
+.input-field, input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* Thêm viền nhẹ */
+    border-radius: 5px;
+    background-color: #f0f4f8; /* Nền xám nhạt */
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Style cho phần hình ảnh */
+.image-upload {
+    margin-bottom: 10px;
+}
+
+/* Style cho nút Gửi Khảo Sát */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #000; /* Màu đen */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bo góc mềm hơn */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Hiệu ứng hover cho nút */
+.submit-btn:hover {
+    background-color: #333; /* Màu đen nhạt hơn khi hover */
+    transform: scale(1.02); /* Phóng to nhẹ khi hover */
+}
+
+/* Style cho nút Chọn tệp tùy chỉnh */
+.custom-file-upload {
+    display: inline-block;
+    width: 100%;
+padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f4f8;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Hiệu ứng hover cho nút Chọn tệp */
+.custom-file-upload:hover {
+    background-color: #e0e7ef; /* Màu xám nhạt hơn khi hover */
+}
+
+/* Style cho phần hiển thị tên tệp */
+#file-name {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    word-break: break-all; /* Đảm bảo tên tệp dài sẽ xuống dòng nếu cần */
+}

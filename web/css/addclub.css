@@ -1,0 +1,44 @@
+
+
+.club-form-container {
+    width: 400px; /* Chiều rộng của ô vuông */
+    height: 400px; /* Chiều cao của ô vuông */
+    background: white; /* Nền trắng */
+    color: black; /* Chữ màu đen */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Giãn đều các phần tử trong ô */
+}
+
+.club-form-container input {
+    background: #f5f5f5;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.club-form-container input:focus {
+    background: #e0e0e0;
+    outline: none;
+    box-shadow: none;
+}
+
+.club-form-container .btn-submit {
+    background: orange;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.club-form-container .btn-submit:hover {
+    background: darkorange;
+}
+
+h3 {
+    text-align: center;
+}

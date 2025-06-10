@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 20, 2025, 11:00:41 AM
+    Author     : P15Gen1
+*/
+body {
+    background-color: #f8f9fa;
+}
+.email-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-custom {
+    background-color: #198754;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #146c43;
+}
+
